@@ -7,28 +7,28 @@ import (
 	"strings"
 )
 
-type Animal struct {
+type animal struct {
 	food       string
 	locomotion string
 	noise      string
 }
 
-func Eat(animal Animal) {
-	fmt.Println("Food:", animal.food)
+func Eat(animale animal) {
+	fmt.Println("Food:", animale.food)
 }
 
-func Move(animal Animal) {
-	fmt.Println("Locomotion:", animal.locomotion)
+func Move(animalm animal) {
+	fmt.Println("Locomotion:", animalm.locomotion)
 }
 
-func Speak(animal Animal) {
-	fmt.Println("Sound:", animal.noise)
+func Speak(animalsp animal) {
+	fmt.Println("Sound:", animalsp.noise)
 }
 
 func main() {
-	var cow Animal = Animal{"grass", "walk", "moo"}
-	var bird Animal = Animal{"worms", "fly", "peep"}
-	var snake Animal = Animal{"mice", "slither", "hsss"}
+	var cow animal = animal{"grass", "walk", "moo"}
+	var bird animal = animal{"worms", "fly", "peep"}
+	var snake animal = animal{"mice", "slither", "hsss"}
 	var choice string
 	for {
 		fmt.Println("Enter an animal name (cow, bird, or snake) and attribute (eat, move, or speak) separated by space OR type q to exit:")
